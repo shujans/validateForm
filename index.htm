@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Form Validation</title>
+  </head>
+  <body>
+    <div class="container">
+      <form name="form1" onsubmit="return formValidation()" action="#">
+        <table>
+          <tr>
+            <td><label for="html">First Name :</label></td>
+            <td>
+              <input
+                type="text"
+                name="fname"
+                id="fanem"
+                placeholder="Enter Your First Name"
+              />
+              <span id="fanemspan"></span>
+            </td>
+          </tr>
+          <tr>
+            <td><label for="html">Last Name :</label></td>
+            <td>
+              <input
+                type="text"
+                name="lname"
+                id="lanem"
+                placeholder="Enter Your Last Name"
+              />
+              <span id="lanemspan"></span>
+            </td>
+          </tr>
+
+          <tr>
+            <td><label for="html">Password :</label></td>
+            <td>
+              <input
+                type="password"
+                name="password"
+                id="password"
+                placeholder="********"
+              />
+            </td>
+          </tr>
+
+          <tr>
+            <td><label for="html">Conform Password :</label></td>
+            <td>
+              <input
+                type="password"
+                name="cpassword"
+                id="cpassword"
+                placeholder="********"
+              />
+              <span id="cpasswordspan"></span>
+            </td>
+          </tr>
+          <tr>
+            <td><span></span></td>
+            <td>
+              <input
+                type="checkbox"
+                name="checkbox"
+                id="checkbox"
+                onclick="passwordShowHide()"
+              />
+              <label for="html"> Show Password</label>
+            </td>
+          </tr>
+        </table>
+        <button type="submit" id="btn">Submit</button>
+      </form>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
